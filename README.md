@@ -1,0 +1,2 @@
+# HormonyMusicServerCard
+一个基于鸿蒙开发的音乐服务卡片，可以直接真机运行哦
