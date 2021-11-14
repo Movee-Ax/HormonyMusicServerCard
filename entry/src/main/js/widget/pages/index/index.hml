@@ -1,0 +1,34 @@
+<div class="card_root_layout">
+    <div if="{{isMiniWidget}}" class="mini_card_container">
+        <text class="mini_card_song">{{songName}}</text>
+        <div if="{{isPause}}" class="mini_card_icon" style="background-image: url(&quot;common/ic_himusic_play.png &quot;);" on:click="play"> </div>
+        <div else class="mini_card_icon" style="background-image: url(&quot;common/ic_himusic_pause.png &quot;);" on:click="pause" > </div>
+    </div>
+    <div elif="{{isSmallWidget}}" class="small_card_container">
+        <div class="small_widget_space"></div>
+        <div class="small_widget_play_container">
+            <text class="mini_card_song">{{songName}}</text>
+            <div if="{{isPause}}" class="mini_card_icon" style="background-image: url(&quot;common/ic_himusic_play.png &quot;);" on:click="play"> </div>
+            <div else class="mini_card_icon" style="background-image: url(&quot;common/ic_himusic_pause.png &quot;);" on:click="pause" > </div>
+        </div>
+    </div>
+    <div elif="{{isLargeWidget}}" class="div_basic_container">
+        <image class="item_image" src="{{songAlbum}}" onclick="getDetail">
+        </image>
+        <div class="div_right_container">
+            <div class="title_container">
+                <text class="item_title">{{ songName }}
+                </text>
+                <text class="item_content">{{ itemContent }}
+                </text>
+            </div>
+
+            <div class="button_container">
+                <button class="button_first" type="circle" onclick="play_pre" icon="/common/ic_himusic_previous.png"></button>
+                <button if="{{isPause}}" class="button_other" type="circle" onclick="play" icon="/common/ic_himusic_play.png"></button>
+                <button else class="button_other" type="circle" onclick="pause" icon="/common/ic_himusic_pause.png"></button>
+                <button class="button_other" type="circle" onclick="play_next" icon="/common/ic_himusic_next.png"></button>
+            </div>
+        </div>
+    </div>
+</div>

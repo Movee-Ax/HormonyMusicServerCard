@@ -1,0 +1,71 @@
+{
+  "data": {
+    "isMiniWidget": "false",
+    "isSmallWidget": "false",
+    "isLargeWidget": "false",
+    "songName": "Make it possible",
+    "singerName": "",
+    "itemTitle": "Music",
+    "itemContent": "Singer",
+    "isPause": "true",
+    "songAlbum": "/common/album.png",
+    "playIcon": "/common/ic_himusic_play.png"
+  },
+  "actions": {
+    "getDetail": {
+      "action": "message",
+      "params": {
+        "mAction": "get_detail_info"
+      }
+    },
+    "setPlayMode": {
+      "action": "message",
+      "params": {
+        "mAction": "set_play_mode"
+      }
+    },
+    "getPrevious": {
+      "action": "message",
+      "params": {
+        "mAction": "get_previous"
+      }
+    },
+    "play": {
+      "action": "message",
+      "params": {
+        "mAction": "play"
+      }
+    },
+    "pause": {
+      "action": "message",
+      "params": {
+        "mAction": "pause"
+      }
+    },
+    "play_pre": {
+      "action": "message",
+      "params": {
+        "mAction": "play_pre"
+      }
+    },
+    "play_next": {
+      "action": "message",
+      "params": {
+        "mAction": "play_next"
+      }
+    },
+    "getNext": {
+      "action": "message",
+      "params": {
+        "mAction": "get_next"
+      }
+    },
+    "getFavorite": {
+      "action": "message",
+      "params": {
+        "mAction": "get_favorite"
+      }
+    }
+  }
+}
+

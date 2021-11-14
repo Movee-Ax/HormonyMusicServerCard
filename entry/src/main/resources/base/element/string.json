@@ -1,0 +1,20 @@
+{
+  "string": [
+    {
+      "name": "entry_MainAbility",
+      "value": "Movee"
+    },
+    {
+      "name": "mainability_description",
+      "value": "JS_Empty Ability"
+    },
+    {
+      "name": "des_widget_24",
+      "value": "Player Widget"
+    },
+    {
+      "name": "song_name_default",
+      "value": "Click to play"
+    }
+  ]
+}
